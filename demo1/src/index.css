@@ -1,10 +1,15 @@
 @import "tailwindcss";
 
+
+:root{
+  --bgColor: red;
+}
+
 #silde-circle::before{
   height: 80%;
   width: 80%;
   content: "";
-  background-color: red;
+  background-color:var(--bgColor);
   position:absolute;
   border-radius: 50%;
 }
