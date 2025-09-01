@@ -13,8 +13,8 @@ const AnimateCard = () => {
         translateX: "-0%",
         left: "0%",
         duration: 1,
+        rotate: 360,
         delay: 0.1,
-        ease: 'bounce',
         "--bgColor": "red"
 
       })
@@ -29,8 +29,8 @@ const AnimateCard = () => {
         left: "50%",
         duration: 1,
         delay: 0.1,
-        ease: 'bounce',
-        "--bgColor": ""
+        rotate: 360,
+        "--bgColor": "orange"
 
       })
       setStep(2)
@@ -41,14 +41,11 @@ const AnimateCard = () => {
       gsap.to('#silde-circle', {
         translateX: "-100%",
         left: "100%",
-        duration: 1,
+        duration: 1,       
+        rotate: 360,
         delay: 0.1,
-        ease: 'bounce',
         "--bgColor": "green",
       })
-
-
-
 
       setStep(0)
       return
