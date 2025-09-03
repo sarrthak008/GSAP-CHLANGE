@@ -1,0 +1,4 @@
+.border-ridge{
+    border:outset 10px #f85772;
+    background: linear-gradient(to bottom , black,#e9435e,rgb(95, 5, 20));
+}

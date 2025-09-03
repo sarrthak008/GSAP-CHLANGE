@@ -1,5 +1,6 @@
 import React from 'react'
 import AnimateCard from './AnimateCard'
+import "./App.css"
 
 const App = () => {
   return (
