@@ -43,7 +43,6 @@ const AnimateCard = () => {
              delay:0.1,
              width:"15%"
           })
-
          }
 
       })
@@ -60,6 +59,7 @@ const AnimateCard = () => {
         delay: 0.1,
         rotate: 360,
         "--bgColor": "orange",
+
         onStart:()=>{
           gsap.to(".top-part",{
             backgroundColor:"orange",
@@ -86,7 +86,6 @@ const AnimateCard = () => {
             delay:0.1,
             width:"30%"
           })
-
 
        }
 
@@ -142,14 +141,16 @@ const AnimateCard = () => {
 
 
   return (
-    <div className='h-[500px] w-[350px] rounded-2xl overflow-hidden'>
-      <div className='h-[70%] w-full bg-orange-400 top-part'>
-          <div className='h-[35%] bg-gray-400 '>
-            {/* title */}
-            <span>Confuse</span>
-            <span>Happy</span>
-            <span>Sad</span>
-          </div>
+    <div className='h-[450px] w-[350px] rounded-2xl overflow-hidden'>
+      <div className='h-[70%] w-full bg-orange-400 top-part flex items-center justify-center flex-col'>
+
+          {/* <div className='h-[35%] text-5xl  text-gray-300 font-extrabold items-center justify-center gap-[10px] relative shadow-bottom '>
+    
+            <span className='h-full w-full  text-center shrink-0 flex items-center justify-center relative txt-1 bg-red-50'>Confuse</span>
+            <span className='h-full w-full  text-center shrink-0  flex items-center justify-center relative txt-2 bg-red-200'>Happy</span>
+            <span className='h-full w-full  text-center shrink-0 flex items-center justify-center relative txt-3 bg-red-400'>Sad</span>
+          </div> */}
+
 
           {/* eyes */}
           <div className='flex items-center gap-[30px] justify-center'>
